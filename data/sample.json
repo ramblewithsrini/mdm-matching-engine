@@ -1,0 +1,20 @@
+{
+  "_comment": "Sample data for mdm.py. Every person and address is fictional.",
+  "records": [
+    { "id": "P1", "source": "Policy", "name": "Jonathan Smith", "dob": "1980-03-12", "address": "14 Oak Lane, Leeds, LS1 4AB", "email": "jon.smith@example.com", "updated": "2016-01-10" },
+    { "id": "C1", "source": "Claims", "name": "Jon Smith", "dob": "12/03/1980", "address": "14 Oak Ln, Leeds LS1 4AB", "email": "", "updated": "2017-06-02" },
+    { "id": "M1", "source": "Marketing", "name": "J. Smyth", "dob": "12-03-1980", "address": "14 Oak Lane LS14AB", "email": "jon.smith@example.com", "updated": "2017-09-15" },
+    { "id": "P2", "source": "Policy", "name": "Sarah Smith", "dob": "1982-09-05", "address": "14 Oak Lane, Leeds, LS1 4AB", "email": "sarah.smith@example.com", "updated": "2016-01-10" },
+    { "id": "M2", "source": "Marketing", "name": "Sarah Smith", "dob": "05/09/1982", "address": "22 Elm Road, Leeds, LS2 7QT", "email": "sarah.smith@example.com", "updated": "2017-11-20" },
+    { "id": "P3", "source": "Policy", "name": "Priya Patel", "dob": "1975-07-21", "address": "3 Mill Street, York, YO1 6AA", "email": "priya.patel@example.com", "updated": "2015-04-18" },
+    { "id": "C2", "source": "Claims", "name": "Priya Patell", "dob": "21/07/1975", "address": "3 Mill St, York YO1 6AA", "email": "", "updated": "2016-08-30" },
+    { "id": "P4", "source": "Policy", "name": "Ravi Patel", "dob": "1974-02-14", "address": "3 Mill Street, York, YO1 6AA", "email": "ravi.patel@example.com", "updated": "2015-04-18" },
+    { "id": "M3", "source": "Marketing", "name": "Daniel Evans", "dob": "30/11/1990", "address": "8 Station Road, Bath, BA1 1AA", "email": "dan.evans@example.com", "updated": "2017-02-11" },
+    { "id": "C3", "source": "Claims", "name": "Danielle Evans", "dob": "1991-11-30", "address": "8 Station Rd, Bath BA1 1AA", "email": "", "updated": "2017-05-07" }
+  ],
+  "defaults": {
+    "weights": { "name": 35, "dob": 30, "address": 20, "email": 15 },
+    "thresholds": { "review": 70, "auto": 90 },
+    "survivorship": { "name": "most-trusted", "address": "most-trusted" }
+  }
+}
